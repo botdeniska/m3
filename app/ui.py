@@ -65,7 +65,7 @@ class UserAddWindow(BaseEditWindow):
 
     def _do_layout(self):
         super(UserAddWindow, self)._do_layout()
-        self.form.items.extend(
+        self.form.items.extend((
             self.field__password,
             self.field__lastlogin,
             self.field__superstatus,
@@ -77,7 +77,7 @@ class UserAddWindow(BaseEditWindow):
             self.field__active,
             self.field__datajoined,
 
-        )
+        ))
 
     def set_params(self, params):
         super(UserAddWindow, self).set_params(params)
